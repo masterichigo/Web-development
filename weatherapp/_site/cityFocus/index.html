@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/sun.png" />
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="/js/weatherapp.js"></script>
+    <script src="/js/data-store.js"></script>
+    <script src="/js/components/weather-code.js"></script>
+    <script src="/js/components/weather-item.js"></script>
+    <script src="/js/components/city-item.js"></script>
+    <script src="/js/components/now-card.js"></script>
+    <script src="/js/pages/cityFocus.js"></script>  
+</head>
+<body>
+    <section class="hero is-info is-small">
+        <div class="hero-head"> 
+            <nav class="navbar">    
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <img src="/images/logo.png" alt="Logo" />
+                    </a>
+                </div>
+                <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-end">
+                        <span class="navbar-item">
+                            <a href="/index.html" class="button is-primary is-inverted">
+                                <span>Home</span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered is-capitalized">
+                <p class="title"></p>
+                <p class="subtitle"></p>
+            </div>
+        </div>
+    </section>
+    <div id="current" class="columns is-centered">  
+    </div>
+    <div id="max" class="columns is-centered">
+    </div>
+    <div id="time" class="columns is-centered">  
+    </div>
+</body>
+</html>

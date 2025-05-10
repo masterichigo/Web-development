@@ -1,0 +1,5 @@
+window.weatherApp = {
+    components: {},
+    dataStore: {},
+}
+
